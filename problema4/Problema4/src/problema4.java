@@ -1,5 +1,4 @@
-public class Problema4 {
-    public static class Celulares{
+class Celulares{
         private String sistemaOperativo;
         private double tamPantalla;
         private double costoInicial;
@@ -8,10 +7,7 @@ public class Problema4 {
         private double costoFinal;
         private String direccMac;
         private String direccImei;
-
-        public Celulares() {}
-
-        public void Celulares(){ }
+        public Celulares(){}
         public Celulares(String sistemaOperativo,
                          double tamPantalla,
                          double ivaPorcentaje,
@@ -81,8 +77,11 @@ public class Problema4 {
                     + "\nCosto Inicial del telefono: " + costoInicial + " $ dolares"+"\nIva en Porcentaje: "
                     + ivaPorcentaje +" %"+"\nIva del costo Inicial: " + ivaCosto_inicial + " $ dolares"+"\nCosto Final: "+costoFinal+" $ dolares";
         }
-    }
+}
 
+
+
+public class problema4{
     public static void main(String[] args) {
         Celulares celulares1=new Celulares();
         celulares1.setSistemaOperativo("Android");
@@ -94,7 +93,8 @@ public class Problema4 {
         celulares1.CalcularIvaCosto_inicial();
         celulares1.CalcularcostoFinal();
         System.out.println(celulares1.toString());
-
     }
 
+
 }
+

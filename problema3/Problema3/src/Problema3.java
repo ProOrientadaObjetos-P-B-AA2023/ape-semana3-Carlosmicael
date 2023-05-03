@@ -1,6 +1,4 @@
-
-public class Problema3 {
-public static class InstitucionEducativa {
+class InstitucionEducativa {
     private String nombre;
     private String tipoInstitucion;
     private int numAlumnos;
@@ -8,9 +6,11 @@ public static class InstitucionEducativa {
     private int numSedes;
     private double gastosProyectadosPorEstudiante;
     private double presupuesto;
-    public void Problema3(){}
+    public InstitucionEducativa(){}
 
-    public InstitucionEducativa() {
+    public InstitucionEducativa(String nombre,String tipoInstitucion,
+                                int numAlumnos,int numDocentes,int numSedes,
+                                double gastosProyectadosPorEstudiante,double presupuesto) {
         this.nombre = nombre;
         this.tipoInstitucion = tipoInstitucion;
         this.numAlumnos = numAlumnos;
@@ -21,46 +21,57 @@ public static class InstitucionEducativa {
     }
 
     public String getNombre() {
+
         return nombre;
     }
 
     public void setNombre(String nombre) {
+
         this.nombre = nombre;
     }
 
     public String getTipoInstitucion() {
+
         return tipoInstitucion;
     }
 
     public void setTipoInstitucion(String tipoInstitucion) {
+
         this.tipoInstitucion = tipoInstitucion;
     }
 
     public int getNumAlumnos() {
+
         return numAlumnos;
     }
 
     public void setNumAlumnos(int numAlumnos) {
+
         this.numAlumnos = numAlumnos;
     }
 
     public int getNumDocentes() {
+
         return numDocentes;
     }
 
     public void setNumDocentes(int numDocentes) {
+
         this.numDocentes = numDocentes;
     }
 
     public int getNumSedes() {
+
         return numSedes;
     }
 
     public void setNumSedes(int numSedes) {
+
         this.numSedes = numSedes;
     }
 
     public double getGastosProyectadosPorEstudiante() {
+
         return gastosProyectadosPorEstudiante;
     }
 
@@ -85,6 +96,8 @@ public static class InstitucionEducativa {
                 + gastosProyectadosPorEstudiante + "\nPresupuesto: " + presupuesto;
     }
 
+}
+public class Problema3 {
     public static void main(String[] args) {
         InstitucionEducativa insttucion1 = new InstitucionEducativa();
         insttucion1.setNombre("Carlos Lopez");
@@ -96,5 +109,4 @@ public static class InstitucionEducativa {
         insttucion1.setPresupuesto();
         System.out.println(insttucion1);
     }
-}
 }

@@ -55,7 +55,7 @@ class Terreno{
         return msj;
     }
 }
-public class Problema1 {
+public class Problema_1 {
     public static void main(String[] args) {
         Terreno terreno1 = new Terreno(10,2,2);
         terreno1.calcularAreaTerreno();
